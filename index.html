@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round Robin Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Round Robin Scheduling</h1>
+        <form id="processForm">
+            <input type="text" id="processName" placeholder="Enter Process Name" required>
+            <input type="number" id="arrivalTime" placeholder="Enter Arrival Time" required>
+            <input type="number" id="burstTime" placeholder="Enter Burst Time" required>
+            <button type="button" id="addProcess">Add Process</button>
+        </form>
+        <ul id="processList"></ul>
+        <button id="calculateSchedule">Calculate Schedule</button>
+        <div id="scheduleOutput"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
